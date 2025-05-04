@@ -46,8 +46,6 @@ pip install ipython
 pip install numpy
 pip install pandas
 pip install matplotlib
-pip install streamlit
-pip install streamlit_extras
 pip install flask
 pip install tqdm
 ```
@@ -64,10 +62,10 @@ pip install tensorflow==2.12.0 --upgrade
 
 To use this project, follow these steps:
 
-1. Clone the repository: ```git clone https://github.com/Bird-Sound-Classification-using-Deep-Learning.git```
+1. Clone the repository: ```git clone https://github.com/lovieheartz/Bird-Sound-Classification-DL```
 2. Install the required packages: ```pip install -r requirements.txt```
-3. Run the Streamlit app: ```streamlit run app.py```
-4. Access the app in your browser at ```http://localhost:8501```
+3. Run the Flask app: ```python app.py```
+4. Access the app in your browser at ```http://127.0.0.1:7860```
 
 <br />
 
@@ -107,11 +105,7 @@ To use this project, follow these steps:
 
 
 <br />
-
-![](https://github.com/gopiashokan/Bird-Sound-Classification-using-Deep-Learning/blob/main/Inference_Images/Bird_Inference.png)
-
-🚀 **Application:** [https://huggingface.co/spaces/gopiashokan/Bird-Sound-Classification](https://huggingface.co/spaces/gopiashokan/Bird-Sound-Classification)
-
+🚀 **Application:** https://huggingface.co/spaces/lovieheartz/Bird-Sound-Classification-DL
 
 <br />
 
@@ -129,9 +123,7 @@ This project is licensed under the MIT License. Please review the LICENSE file f
 
 **Contact**
 
-📧 Email: gopiashokankiot@gmail.com 
-
-🌐 LinkedIn: [linkedin.com/in/gopiashokan](https://www.linkedin.com/in/gopiashokan)
+📧 Email : rehanfarooque51@gmail.com
 
 For any further questions or inquiries, feel free to reach out. We are happy to assist you with any queries.
 
