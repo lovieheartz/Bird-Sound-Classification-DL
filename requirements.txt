@@ -1,0 +1,11 @@
+tensorflow
+scikit-learn
+opencv-python
+librosa
+numpy
+pandas
+matplotlib
+streamlit
+streamlit_extras
+tqdm
+flask
