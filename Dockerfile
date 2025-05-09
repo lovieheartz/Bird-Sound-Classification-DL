@@ -1,31 +1,29 @@
-# Use official lightweight Python image
+# Use official Python image
 FROM python:3.10-slim
 
 # Set environment variables
-ENV PYTHONDONTWRITEBYTECODE=1 \
-    PYTHONUNBUFFERED=1
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
 
-# Set working directory
-WORKDIR /app
+# Set work directory
+WORKDIR /code
 
 # Install system dependencies
 RUN apt-get update && apt-get install -y \
     ffmpeg \
-    libsndfile1 \
-    libsm6 \
-    libxext6 \
-    libgl1 \
     && rm -rf /var/lib/apt/lists/*
 
-# Install Python dependencies
-COPY requirements.txt .
+# Copy files
+COPY requirements.txt /code/
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy the app files
-COPY . .
+COPY . /code/
 
-# Expose port for Flask
+# Create uploads directory with full permissions
+RUN mkdir -p /code/uploads && chmod -R 777 /code/uploads
+
+# Expose port
 EXPOSE 7860
 
-# Run the application
+# Run the app
 CMD ["python", "app.py"]
