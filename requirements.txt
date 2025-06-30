@@ -1,10 +1,15 @@
-tensorflow
-scikit-learn
+# Core libraries
+numpy>=1.23.0
+pandas>=1.5.0
+matplotlib>=3.6.0
 seaborn==0.12.2
-opencv-python
-librosa
-numpy
-pandas
-matplotlib
-tqdm
-flask
+tqdm>=4.64.0
+# Audio processing
+librosa>=0.10.0
+# Machine learning
+scikit-learn>=1.2.0
+tensorflow>=2.11.0 
+# Web deployment (API or dashboard)
+flask>=2.2.0
+# Computer vision (if using spectrograms, etc.)
+opencv-python>=4.7.0.72
