@@ -13,3 +13,17 @@ tensorflow>=2.11.0
 flask>=2.2.0
 # Computer vision (if using spectrograms, etc.)
 opencv-python>=4.7.0.72
+
+#You can also use this :
+'''
+tensorflow
+scikit-learn
+opencv-python
+librosa
+numpy
+pandas
+matplotlib
+tqdm
+flask
+
+'''
